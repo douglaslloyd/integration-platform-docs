@@ -53,7 +53,9 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    require.resolve('docusaurus-lunr-search')
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -72,7 +74,38 @@ const config = {
             label: "Actian Home",
             className: "github-button",
           },
-        ],
+          {
+            href: "https://www.actian.com/blog/",
+            position: "right",
+            label: "Blog",
+            className: "github-button",
+          },
+          {
+            href: "https://communities.actian.com/s/",
+            position: "right",
+            label: "Community",
+            className: "github-button",
+          },
+          {
+            href: "https://esd.actian.com/",
+            position: "right",
+            label: "Downloads",
+            className: "github-button hide-mobile",
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'left',
+            includeCurrentVersion: true,
+             dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            dropdownActiveClassDisabled: true,
+          },
+          {
+            href: 'https://github.com/douglaslloyd/IntegrationPlatform/tree/gh-pages',
+            position: 'right',
+            className: 'header-github-link',
+            title: "Actian Integration Platform Docs - GitHub",
+          },
+       ],
       },
       footer: {
         style: 'dark',
