@@ -4,7 +4,7 @@ title: Activating or Inactivating Templates
 
 # Activating or Inactivating Templates
 
-:::caution IMPORTANT 
+:::caution[IMPORTANT]
 
 Setting a template to Inactive not only inactivates the template but will deactivate any configurations based on it.
 

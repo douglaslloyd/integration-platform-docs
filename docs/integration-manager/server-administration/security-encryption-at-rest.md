@@ -4,7 +4,7 @@ title: Encryption-at-Rest
 ---
 # Encryption-at-Rest
 
-:::danger IMPORTANT!
+:::danger[IMPORTANT!]
 
 Macro values often contain sensitive data. To prevent exposure, it is best practice to encrypt these values at rest, i.e. at the database level.
 

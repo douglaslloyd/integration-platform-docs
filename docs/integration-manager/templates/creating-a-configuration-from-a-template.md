@@ -19,7 +19,7 @@ To create a configuration from a template:
 4. Enter a unique name for your configuration.
 5. (Optional) Select a different template.
 
-    :::caution IMPORTANT
+    :::caution[IMPORTANT]
 
     Care is required if you are changing the source and template. **<font color="red">This needs further explanation.</font>**
 

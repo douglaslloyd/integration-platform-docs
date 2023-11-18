@@ -4,7 +4,7 @@ title: Enabling HTTPS
 ---
 # Enabling HTTPS
  
-:::danger IMPORTANT!
+:::danger[IMPORTANT!]
 
 Using HTTPS is always recommended. API tokens, credentials, and payloads are subject to hijack otherwise.
 

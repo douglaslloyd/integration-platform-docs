@@ -8,7 +8,7 @@ tags:
 
 You can import macros directly from a file to any object (Account, Template, User, Configuration). **<font color="red">Need details about Account object.</font>**
 
-:::note Notes
+:::note[Notes]
 
 * You can import macrodef files in XML (v9) or JSON (v9 and later) formats. For examples, see [Macro File Examples](./importing-macros#macro-file-examples).
 
