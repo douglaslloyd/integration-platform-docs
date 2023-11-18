@@ -35,6 +35,10 @@
   --ifm-navbar-link-hover-color: rgb(0, 0, 0);
 }
 
+html[data-theme='dark'] {
+  --ifm-background-color: #1e2129;
+}
+
 .navbar {
   background-color: #238ffb;
 }
