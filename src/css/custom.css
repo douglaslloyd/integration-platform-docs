@@ -149,3 +149,61 @@ h2 {
 h3 {
   font-weight: 500;
 }
+
+.footer__link-item {
+       color: red;
+}
+  
+.footerColumn-left {
+  float: left;
+  width: 33.33%;
+}
+
+.footerColumn-center {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.footerColumn-right {
+  float: right;
+  width: 33.33%;
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.footerRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footerCopyright {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+[data-theme='dark'] .footerCopyright {
+  color: #888888;
+}
+
+[data-theme='dark'] .footer {
+  background-color: #303030;
+}
+
+[data-theme='light'] .footerCopyright {
+  color: #313131;
+}
+
+[data-theme='light'] .footer {
+  background-color: #ebebeb;
+}
+
+[data-theme='dark'] .pagination-nav__link {
+  background-color: #2b2b2b;
+
+}
+
+[data-theme='light'] .pagination-nav__link {
+  background-color: #e2e2e2;
+}
