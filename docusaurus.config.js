@@ -16,7 +16,8 @@ const config = {
   url: 'https://douglaslloyd.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/integration-platform-docs/',
+  //baseUrl: '/integration-platform-docs/', // GitHub Pages
+  baseUrl: '/', // AWS
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
