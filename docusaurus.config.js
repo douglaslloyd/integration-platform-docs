@@ -58,34 +58,34 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/Logos_Actian_3Color-White-Transparent.png',
       navbar: {
-        title: 'My Site',
+        title: 'Integration Platform',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
+          alt: 'Actian Logo',
+          src: 'img/logos/ACTIAN-logo.svg',
+         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            href: "https://www.actian.com/",
+            position: "right",
+            label: "Actian Home",
+            className: "github-button",
           },
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
+/*           {
+            title: 'QQQ',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Legal',
+                to: '/docs/legal',
               },
             ],
-          },
+          }, */
           {
             title: 'Community',
             items: [
@@ -107,18 +107,14 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
+      copyright: `Copyright © ${new Date().getFullYear()} Actian Corporation. All rights reserved.`,
+    },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
