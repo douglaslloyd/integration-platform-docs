@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Actian Integration Platform',
   tagline: 'The world’s first hybrid integration platform',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logos/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://douglaslloyd.github.io',
@@ -41,14 +41,26 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          lastVersion: 'current',
+           versions: {
+            current: {
+              label: '3.1',
+              path: '/docs',
+            },
+          },                    
+          showLastUpdateTime: true,
+          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/', // Serve the docs at the site's root
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/douglaslloyd/IntegrationPlatform/tree/main/',
+            'https://github.com/douglaslloyd/integration-platform-docs/tree/main/',
         },
+//         blog: {
+//          showReadingTime: true,
+//        },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
