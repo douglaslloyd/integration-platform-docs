@@ -1,7 +1,4 @@
 ---
-layout: default
-title: On-premise Data
-nav_order: 5
-has_children: true
+title: On-Premise Data
 ---
-# On-premise Data
+# On-Premise Data
