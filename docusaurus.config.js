@@ -112,7 +112,7 @@ const config = {
             dropdownActiveClassDisabled: true,
           },
           {
-            href: 'https://github.com/douglaslloyd/IntegrationPlatform/tree/gh-pages',
+            href: 'https://github.com/douglaslloyd/integration-platform-docs/tree/gh-pages',
             position: 'right',
             className: 'header-github-link',
             title: "Actian Integration Platform Docs - GitHub",
