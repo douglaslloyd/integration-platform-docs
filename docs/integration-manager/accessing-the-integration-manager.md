@@ -1,5 +1,5 @@
 ---
-title: Accessing the Integration Managert
+title: Accessing the Integration Manager
 tags:
   - Image Issues
 ---
