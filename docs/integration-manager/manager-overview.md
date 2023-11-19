@@ -12,7 +12,7 @@ Integration Manager brings together the flexible APIs and scalable workloads fro
 * Hierarchical configuration allows you to share artifacts, macros, and files across users with less duplication
 * Expose any Job Configuration as an API
 * Create Jobs programmatically and execute on the fly
-* Execute and monitor Jobs in real-time
+* Execute and monitor Jobs in real time
 * Event-driven Job execution (File events, HTTP/S, Salesforce.com OBM)
 * Job failure notifications
 * Scale and partition workloads across engine pools and remote agents
