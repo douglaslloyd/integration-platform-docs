@@ -16,8 +16,8 @@ const config = {
   //url: 'https://douglaslloyd.github.io', // GitHub Pages
   url: 'https://main--thriving-buttercream-c6ef77.netlify.app/', // Netlify
   // Set the /<baseUrl>/ pathname under which your site is served
-  //baseUrl: '/integration-platform-docs/', // GitHub Pages - '/<projectName>/'
-  baseUrl: '/', // AWS, Netlify
+  baseUrl: '/integration-platform-docs/', // GitHub Pages - '/<projectName>/'
+  //baseUrl: '/', // AWS, Netlify
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
