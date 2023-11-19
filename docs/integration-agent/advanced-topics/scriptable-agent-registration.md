@@ -8,7 +8,7 @@ parent: Advanced Topics
 
 If you need to automate Agent configuration and registration tasks (i.e. direct user interaction with the Agent is not possible), you can use silent install and Scriptable Agent Registration.
 
-## Prerequisites:
+## Prerequisites
 
 * DataCloud or Avalanche Subscription
 * Install Integration Agent 3.1.0 or later.
