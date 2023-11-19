@@ -13,11 +13,11 @@ const config = {
   favicon: 'img/logos/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://douglaslloyd.github.io',
+  //url: 'https://douglaslloyd.github.io', // GitHub Pages
+  url: 'https://main--thriving-buttercream-c6ef77.netlify.app/', // Netlify
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/integration-platform-docs/', // GitHub Pages
-  //baseUrl: '/', // AWS
+  //baseUrl: '/integration-platform-docs/', // GitHub Pages - '/<projectName>/'
+  baseUrl: '/', // AWS, Netlify
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
