@@ -236,5 +236,10 @@ h3 {
   border-radius: var(--ifm-global-radius);
   color: var(--ifm-color-content-secondary);
   display: inline-block;
-  padding: 8px 16px;
+  padding: 6px 12px;
+}
+
+.theme-doc-footer a:hover {
+  background-color: rgba(158, 158, 158,0.1);
+  text-decoration: none;
 }
