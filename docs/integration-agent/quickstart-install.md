@@ -1,6 +1,8 @@
 ---
 title: QuickStart Install
 hide_table_of_contents: true
+tags:
+ - Content Issues
 ---
 
 # QuickStart Install
