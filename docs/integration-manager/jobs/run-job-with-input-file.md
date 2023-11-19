@@ -12,6 +12,8 @@ Refer to [Open API Spec: Run Job with Input File](https://console.im.actiandatac
 
 ## Step 1: Retrieve an Access Token
 
+**<font color="red">This step could be made a reusable component.</font>**
+
 ```
 REQUEST:
 POST https://api.im.actiandatacloud.com/v2/api/login
