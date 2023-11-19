@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Run Job with Input Message
+tags:
+ - Content Issues
 ---
 # Run Job with Input Message
 
@@ -11,6 +13,8 @@ This service allows an API consumer to run an existing JobConfig with a text, js
 Refer to [Open API Spec: Run Job with Input Message](https://console.im.actiandatacloud.com/apidocs/#/Job%20Execution/runJobConfigWithMessage).
 
 ## Step 1: Retrieve an Access Token
+
+**<font color="red">This step could be made a reusable component.</font>**
 
 ```
 REQUEST:
