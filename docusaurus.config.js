@@ -112,12 +112,12 @@ const config = {
              dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
             dropdownActiveClassDisabled: true,
           },
-          {
-            href: 'https://github.com/douglaslloyd/integration-platform-docs/tree/gh-pages',
-            position: 'right',
-            className: 'header-github-link',
-            title: "Actian Integration Platform Docs - GitHub",
-          },
+//          {
+//            href: 'https://github.com/douglaslloyd/integration-platform-docs/tree/gh-pages',
+//            position: 'right',
+//            className: 'header-github-link',
+//            title: "Actian Integration Platform Docs - GitHub",
+//          },
        ],
       },
       footer: {
