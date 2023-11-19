@@ -21,11 +21,11 @@ On the **My Profile** page, non-admin users can edit their name and change their
 
 1. Enter your new password in the Password textbox, or select the **Auto-Generate Password** checkbox.
 
-:::note
+   :::note
 
-You must enter at least 8 characters for your password.
+      You must enter at least 8 characters for your password.
 
-:::
+   :::
 
 2. Click **Update User**.
 
