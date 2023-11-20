@@ -15,7 +15,7 @@ export default function EditThisPage({editUrl}: Props): JSX.Element {
       <Translate
         id="theme.common.editThisPage"
         description="The link label to edit the current page">
-        Suggest Edits
+        &nbsp;Suggest Edits
       </Translate>
     </a>
   );

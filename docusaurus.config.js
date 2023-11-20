@@ -28,6 +28,17 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // Load the Feedback Rocket SDK on every page
+  scripts: [
+    {
+      async: true,
+      src: 'https://www.feedbackrocket.io/sdk/v1.2.js',
+      'data-fr-id': 'IA-9no9dntmzi4xHLP63R',
+      'data-fr-theme': 'dynamic',
+      'data-fr-title': 'Feedback about this page?',
+    }
+  ],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -54,8 +65,8 @@ const config = {
           routeBasePath: '/', // Serve the docs at the site's root
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/douglaslloyd/integration-platform-docs/tree/main/',
+          editUrl: 'https://github.com/douglaslloyd/integration-platform-docs/tree/main/',
+          editCurrentVersion: true,
         },
 //         blog: {
 //          showReadingTime: true,
@@ -105,6 +116,15 @@ const config = {
             label: "Downloads",
             className: "github-button hide-mobile",
           },
+          // Add a feedback button in the top navbar on every page - Commented out because I moved this to the page footer.
+          //{
+          //  type: 'html',
+          //  position: 'right',
+          //  value:
+          //    `<a href=# class=navbar__link data-fr-widget>
+          //      Page Feedback
+          //    </a>`
+          //},
           {
             type: 'docsVersionDropdown',
             position: 'left',
