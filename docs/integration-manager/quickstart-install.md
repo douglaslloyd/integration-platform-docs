@@ -32,7 +32,7 @@ import TabItem from '@theme/TabItem';
 ### Installation
 
 1. Download Actian Integration Manager from [https://esd.actian.com/](https://esd.actian.com/).
-2. Right click the downloaded installer file (integration-manager-3.x.x.exe) and select "Run as Administrator".
+2. Right-click the downloaded installer file (integration-manager-3.x.x.exe) and select "Run as Administrator".
 3. If you have a previous 3.x.x version installed, you will be coerced to uninstall first. Uninstall will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc...).
 4. Accept the License Agreement.
 5. Select the installation path (default: C:/Program Files/Actian/IntegrationManager).
@@ -49,7 +49,7 @@ import TabItem from '@theme/TabItem';
 5. The application.properties file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See the Server Administration documentation for a description of available properties.
 6. ANY change to the application.properties file will require a restart of the service.
    * Go to Windows → Administrative Tools → Services.
-   * Right click on Actian Integration Manager to stop, start, or restart.
+   * Right-click on Actian Integration Manager to stop, start, or restart.
 
      :::note
 
