@@ -13,7 +13,7 @@ tags:
      
    :::info[Important]
 
-      It is highly recommended that you change the admin password. Refer to [Changing Your Password](./editing-your-profile#changing-your-passwordQQQ).
+      It is highly recommended that you change the admin password. Refer to [Changing Your Password](./editing-your-profileQQQ#changing-your-password).
 
    :::
 
