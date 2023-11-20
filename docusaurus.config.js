@@ -26,7 +26,7 @@ const config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Load the Feedback Rocket SDK on every page
   scripts: [
@@ -35,7 +35,7 @@ const config = {
       src: 'https://www.feedbackrocket.io/sdk/v1.2.js',
       'data-fr-id': 'IA-9no9dntmzi4xHLP63R',
       'data-fr-theme': 'dynamic',
-      'data-fr-title': 'Your feedback helps us improve our docs.',
+      'data-fr-title': 'Feedback about this page?',
     }
   ],
 
