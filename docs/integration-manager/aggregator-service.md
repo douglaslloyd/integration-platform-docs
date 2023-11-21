@@ -22,7 +22,11 @@ Note that the File Folder Listener Service must be restarted for any configurati
 **aggregator-config.yml**
 (ProgramDataDirectory)/Actian/IntegrationManager/conf/aggregator-config.yml
 
-NOTE: indentation is critical for YAML syntax!
+:::info[IMPORTANT]
+
+Indentation is critical for YAML syntax!
+
+:::
 
 Example:
 ```

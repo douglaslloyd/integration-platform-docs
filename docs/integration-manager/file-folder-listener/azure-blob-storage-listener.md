@@ -15,7 +15,6 @@ The Azure Blob Storage Listener monitors Blob containers for files and will exec
 For more information on how to create/obtain this key, see [https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal#view-account-access-keys](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal#view-account-access-keys).
 
 **application.properties**
-
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/application.properties
 
 Example:
@@ -33,7 +32,11 @@ Note that the File Folder Listener Service must be restarted for any configurati
 **listeners.yml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml
 
-NOTE: indentation is critical for YAML syntax!
+:::info[IMPORTANT]
+
+Indentation is critical for YAML syntax!
+
+:::
 
 Example:
 ```

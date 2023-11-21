@@ -32,7 +32,11 @@ Note that the File Folder Listener Service must be restarted for any configurati
 **listeners.yml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml
 
-NOTE: indentation is critical for YAML syntax!
+:::info[IMPORTANT]
+
+Indentation is critical for YAML syntax!
+
+:::
 
 Example:
 ```
