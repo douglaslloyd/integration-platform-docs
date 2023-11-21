@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 # User Management
 
-Administrators can create and manage users within the [Administration Console](https://im.dev.actiandatacloud.com/ui/admin/users). Note that User Management requires Account Admin access.
+Administrators can create and manage users within the <a href="https://im.dev.actiandatacloud.com/ui/admin/users" className="externalLink" target="_blank">Administration Console</a>. Note that User Management requires Account Admin access.
 
 Account administrators can:
 
@@ -25,7 +25,7 @@ Account administrators can:
 
    ![Edit-User1](/img/Edit-User1.png)
 
-3. Click &nbsp;<img src="/img/icons/edit-icon.png" style={{width: 20}} alt="the edit icon" />&nbsp; in the **User Details** pane:
+3. Click ![the edit icon](/img/icons/edit-icon.png) in the **User Details** pane:
 
    ![Edit-User2](/img/Edit-User2.png)
 
@@ -45,10 +45,10 @@ Users (admin and non-admin alike) are not allowed to activate/deactivate, or ena
 
 :::
 
-1. Click &nbsp;<img src="/img/icons/Continue-Button.png" style={{width: 140}} alt="the CONTINUE button" />&nbsp;.
-2. Under **What role would you like to assign to the user?**, click **Admin** or **General User**.
-3. If you selected **General User**, click the **Select policies** dropdown and select the desired policy. See [Access Control Policies](./access-control-polices).
+5. Click **Continue**.
+6. Under **What role would you like to assign to the user?**, click **Admin** or **General User**.
+7. If you selected **General User**, click the **Select policies** dropdown and select the desired policy. See [Access Control Policies](./access-control-polices).
 
    ![Edit-User4](/img/Edit-User4.png)
    
-4. Click **Update User**.
+8. Click **Update User**.
