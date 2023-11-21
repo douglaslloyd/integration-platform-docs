@@ -15,7 +15,9 @@ Messages can be submitted to POST: [server base url]/api/aggregators?type=jobcon
 
 ## Aggregator Configuration
 
-Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization
+Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization.
+
+**<font color="red">Where are the instructions for File Folder Listener Authorization?</font>**
 
 **aggregator-config.yml**
 (ProgramDataDirectory)/Actian/IntegrationManager/conf/aggregator-config.yml

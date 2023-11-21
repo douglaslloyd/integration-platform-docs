@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Azure Blob Storage Listener
+tags:
+  - Content Issues
 ---
 # Azure Blob Storage Listener
 
@@ -24,7 +26,9 @@ azure.blob.accesskey=EXAMPLEKEYVALUENefMtV50Sp7o7dW2GhKeZQWUce6z6nTb/gylpzsq5m5U
 
 ## Listener Configuration
 
-Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization
+Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization.
+
+**<font color="red">Where are the instructions for File Folder Listener Authorization?</font>**
 
 **listeners.yml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml

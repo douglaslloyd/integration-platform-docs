@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Local Folder Listener
+tags:
+ - Content Issues
 ---
 # Local Folder Listener
 
@@ -10,7 +12,9 @@ The Local Folder Listener monitors file folders for files and will execute a pre
 
 ## Listener Configuration
 
-Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization
+Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization.
+
+**<font color="red">Where are the instructions for File Folder Listener Authorization?</font>**
 
 **listeners.yml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml

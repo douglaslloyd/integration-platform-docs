@@ -1,7 +1,10 @@
 ---
 layout: default
 title: AWS S3 Bucket Listener
+tags:
+  - Content Issues
 ---
+
 # AWS S3 Bucket Listener
 
 ## Overview
@@ -22,7 +25,9 @@ aws.s3.secretkey=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 ## Listener Configuration
 
-Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization
+Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization.
+
+**<font color="red">Where are the instructions for File Folder Listener Authorization?</font>**
 
 **listeners.yml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml
