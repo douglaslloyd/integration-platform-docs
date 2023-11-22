@@ -70,12 +70,12 @@ const FeatureList = [
 
 function Feature({Svg, title, description, link }) {
   return (
-    <a href={link} className='featureLink'>
+    <a href={link} className="featureLink">
 
     <div className={styles.feature}>
       <div className="text--center">
         {
-           <Svg className="featureSVG-custom" www role="img" />
+           <Svg className="featureSVG-custom" role="img" />
         }      
       <h3 className="featureLink">{title}</h3>
       <p>{description}</p>
@@ -90,9 +90,9 @@ function Feature({Svg, title, description, link }) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.featuresSection}>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-4">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-4">
             <div className={styles.featuresContainer}>
               {FeatureList.map((props, idx) => (
                 <Feature key={idx} {...props} />
