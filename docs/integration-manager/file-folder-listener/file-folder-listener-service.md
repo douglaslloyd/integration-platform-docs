@@ -23,7 +23,7 @@ Integration Manager must be installed, configured, and running.
 These properties are located in &lt;ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties.
 
 | Property | Default Value | Description|
-| --- | :---: | --- |
+| :--- | :---: | :--- |
 | listener.backup- directory | — | The folder where backups of successfully submitted files are stored |
 | listener.error- directory | — | The folder where copies of failed file submissions are stored, for example, Exceeded max file size, Integration Manager Service was not running, and so on |
 
@@ -108,7 +108,7 @@ Follow the appropriate link for the Listener you want to configure:
 You can add these properties to &lt;ProgramDataDirectory>\Actian\FileFolderListener\conf\application.properties to further customize behavior.
 
 | Property | Default&nbsp;Value | Description|
-| --- | :---: | --- |
+| :--- | :--- | :--- |
 | listener.retain-backup-files | true | Set this to false to not retain backup files. Error files will still be saved. |
 | listener.backup-directory-max-file-age | 7 | The number of days backup files are retained |
 | listener.error-directory-max-file-age | 14 | The number of days error files are retained |
