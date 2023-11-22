@@ -1,9 +1,9 @@
 ---
-title: QuickStart Install
+title: Quick Start Installation
 hide_table_of_contents: true
 ---
 
-# QuickStart Install
+# Quick Start Installation
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -33,27 +33,38 @@ import TabItem from '@theme/TabItem';
 
 1. Download Actian Integration Manager from [https://esd.actian.com/](https://esd.actian.com/).
 2. Right-click the downloaded installer file (integration-manager-3.x.x.exe) and select "Run as Administrator".
-3. If you have a previous 3.x.x version installed, you will be coerced to uninstall first. Uninstall will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc...).
-4. Accept the License Agreement.
-5. Select the installation path (default: C:/Program Files/Actian/IntegrationManager).
-6. Select the shared data path (default: C:/ProgramData/Actian/IntegrationManager).
-7. Installation should take less than a minute.
+   
+   If you have a previous 3.x.x version installed, you will be prompted to uninstall first. Uninstall will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc.).
+3. Accept the License Agreement.
+4. Select the installation path (default: C:/Program Files/Actian/IntegrationManager).
+5. Select the shared data path (default: C:/ProgramData/Actian/IntegrationManager).
+
+Installation should take less than a minute.
 
 ### Configuration/Reconfiguration
 
-1. Locate the application.properties file (default: C:/ProgramData/Actian/IntegrationManager/conf/application.properties)
-2. Note that if you have a previous installation of Integration Manager, none of your existing property values will be changed.&#x20;
-3. You can confirm or alter the path to your DataConnect v12 license file using the property ```engine.licensePath``` (default: C:/ProgramData/Actian/IntegrationManager/license/cosmos.slc).
-   * If you were previously using Integration Manager v2 and DataConnect v11, you will need to alter this value before executing any integrations. DataConnect v11 and v12 licenses are not interchangeable.
-4. You can also run Integration Manager on a different port using the property ```server.port``` (default: 8080).
-5. The application.properties file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See the Server Administration documentation for a description of available properties.
-6. ANY change to the application.properties file will require a restart of the service.
+1. Locate the application.properties file (default: C:/ProgramData/Actian/IntegrationManager/conf/application.properties).
+   :::note
+   
+      If you have a previous installation of Integration Manager, none of your existing property values will be changed.
+
+   :::
+2. Confirm or alter the path to your DataConnect v12 license file using the property ```engine.licensePath``` (default: C:/ProgramData/Actian/IntegrationManager/license/cosmos.slc).
+   :::note
+   
+      If you were previously using Integration Manager v2 and DataConnect v11, you will need to alter this value before executing any integrations. DataConnect v11 and v12 licenses are not interchangeable.
+
+   :::
+  
+3. To run Integration Manager on a different port, set the property ```server.port``` (default: 8080).
+4. The application.properties file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See [Server Administration Overview](./server-administration/server-administration-overview) for a description of available properties.
+5. Any change to the application.properties file will require a restart of the service.
    * Go to Windows → Administrative Tools → Services.
    * Right-click on Actian Integration Manager to stop, start, or restart.
 
      :::note
 
-        Remember that configuration file changes will survive uninstallation/reinstallation.
+        Configuration file changes will survive uninstallation/reinstallation.
 
      :::
 
@@ -64,7 +75,7 @@ import TabItem from '@theme/TabItem';
 
    :::note
 
-      Remember that log file data will survive uninstallation/reinstallation.
+      Log file data will survive uninstallation/reinstallation.
 
    :::
 
@@ -109,24 +120,24 @@ import TabItem from '@theme/TabItem';
    * If you were previously using Integration Manager v2 and DataConnect v11, you will need to alter this value before executing any integrations. DataConnect v11 and v12 licenses are not interchangeable.
 4. You can also run Integration Manager on a different port using the property ```server.port``` (default: 8080).
 5. The application.properties file can be used for a variety of configurations to tailor Integration Manager to your requirements and environment. See the Server Administration documentation for a description of available properties.
-6. ANY change to the application.properties file will require a restart of the service.
+6. Any change to the application.properties file will require a restart of the service.
 
-:::note
+   :::note
 
-Remember that configuration file changes will survive uninstallation/reinstallation.
+   Configuration file changes will survive uninstallation/reinstallation.
 
-:::
+   :::
 
 ### Service Logs & Monitoring
 
 1. You can monitor service activity and get important additional information from the log file (default:  /etc/opt/actian/integration-manager/logs/integration-manager.log)
 2. You can retrieve DataConnect Engine log files by Job Id in the job history folder (default: /etc/opt/actian/integration-manager/history/job)
 
-:::note
+   :::note
 
-Remember that log file data will survive uninstallation/reinstallation.
+   Log file data will survive uninstallation/reinstallation.
 
-:::
+   :::
 
 ### Start, Stop, Uninstall, Etc
 

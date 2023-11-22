@@ -6,78 +6,93 @@ title: Enabling HTTPS
  
 :::danger[IMPORTANT!]
 
-Using HTTPS is always recommended. API tokens, credentials, and payloads are subject to hijack otherwise.
+Using HTTPS is always recommended. Otherwise, API tokens, credentials, and payloads are subject to hijack.
 
 HTTPS is always enabled and enforced for Integration Manager powered by DataCloud (SaaS and VPC).
 
 :::
 
-HTTPS encryption is configured using a Keystore file (which contains one or more SSL certificates). 
+###  SSL Certificates
 
-### In general, SSL certificates have 2 functions:
-* encryption
-* authenticate the identity of the certificate’s owner
+HTTPS encryption is configured using a Keystore file, which contains one or more SSL certificates. In general, SSL certificates have two functions:
 
-### There are 2 types of SSL certificates:
+* Encryption
+* Authenticate the identity of the certificate’s owner
+
+There are 2 types of SSL certificates:
 * **CA-Signed:** When you purchase a CA-Signed certificate, you’re required to undergo a validation process that confirms key identifying information. A CA-Signed certificate is trusted by every browser or device that trusts the certificate authority. Certificate authorities are required to undergo regular audits and must comply with a strict set of guidelines to be trusted. 
-* **Self-Signed:** When you sign a certificate yourself, you’re not performing the requisite validation. Browsers have been designed to NOT trust certificates by default. Use of a self-signed certificate will generate a browser error for any attempt to access over HTTPS. Self-signed certificates are only appropriate for testing environments and non-public networks. 
+* **Self-Signed:** When you sign a certificate yourself, you are not performing the requisite validation. Browsers have been designed to NOT trust certificates by default. Using a self-signed certificate will generate a browser error for any attempt to access over HTTPS. Self-signed certificates are appropriate only for testing environments and non-public networks. 
+
+To enable HTTPS, you must accomplish the following tasks:
+1. Create a keystore file and import certificate.
+2. Configure Integration Manager’s SSL properties.
+3. Import your certificates into your Java library.
 
 ## Step 1: Create Keystore/Import Certificate
 
-Note that either keytool or OpenSSL tools can be used to generate, import, and manage certificates from the command line. For OpenSSL certificate instructions, see https://www.openssl.org/.
+You can use either keytool or OpenSSL tools to generate, import, and manage certificates from the command line. 
 
-### Option A: How to Create and Import a CA-Signed Certificate
+This step explains how to accomplish the task using keytool. For OpenSSL certificate instructions, see https://www.openssl.org/.
 
-Open a command console and change directory to the JRE bin folder.
+### Option A: Create and Import a CA-Signed Certificate
 
-Create a new keystore file using Java keytool. You can use whatever alias and filename you choose. For illustration purposes, we are using "integration-manager" and "keystore.p12", respectively.
+1. Open a command console and change directory to the JRE bin folder.
 
-Then, create a certificate signing request file using your newly created keystore.
+    ```
+    cd (ProgramData)/Actian/IntegrationManager/jre/bin
+    ```
 
-<code>
-cd (ProgramData)/Actian/IntegrationManager/jre/bin
-keytool -genkey -alias integration-manager -keyalg RSA -keystore keystore.p12
-keytool -certreq -alias integration-manager -keyalg RSA -file certificate-signing-request.txt -keystore keystore.p12
-</code>
+2. Create a new keystore file using Java keytool. You can use whatever alias and filename you choose. For illustration purposes, we are using "integration-manager" and "keystore.p12", respectively.
 
-Send the certificate request to the Certificate Authority you are using. 
+    ```
+    keytool -genkey -alias integration-manager -keyalg RSA -keystore keystore.p12
+    ```
 
-### Wait for your new certificate to arrive...
+3. Create a certificate signing request file using your newly created keystore. For example:
 
-When your certificate(s) arrive, import them (usually \*.cer files) into your keystore. Often times there are multiple cert files provided, each with it's own unique name. Note "root" and "intermediate" are just example names. The "server" certificate will replace the existing self-signed one in the keystore, so you should use the same alias you specified in step 2 when generating the signing request.
+    ```
+    keytool -certreq -alias integration-manager -keyalg RSA -file certificate-signing-request.txt -keystore keystore.p12
+    ```
 
-<code>
-keytool -import -alias root -keystore keystore.p12 -trustcacerts -file root.cer
-keytool -import -alias intermediate -keystore keystore.p12 -trustcacerts -file intermediate.cer
-keytool -import -alias integration-manager -keystore keystore.p12 -trustcacerts -file server.cer
-</code>
+4. Send the certificate request to the Certificate Authority you are using. 
+
+5. Wait for your new certificate to arrive.
+
+6. When your certificate(s) arrive, import them (usually \*.cer files) into your keystore. Often, multiple cert files are provided, each with its own unique name. Note that "root" and "intermediate" are just example names. The "server" certificate will replace the existing self-signed one in the keystore, so you should use the same alias you specified in step 2 when generating the signing request.
 
 Contact your Certificate Authority with any specific questions/concerns/issues you encounter during import. Actian Support will not be able to resolve issues with CA-Signed Certificates.
 
-### Option B: How to Create and Import a Self-Signed Certificate
+### Option B: Create and Import a Self-Signed Certificate
 
-**Self-signed certs should not be used in production environments!**
+:::caution
 
-Open a command console and change directory to the JRE bin folder.
+Self-signed certs should not be used in production environments!
 
-Create a new keystore file using Java keytool. You can use whatever alias and filename you choose. For illustration purposes, we are using "integration-manager" and "keystore.p12", respectively.
+:::
 
-You will be prompted to set a keystore password and also add identity details (name, company, address, etc).
+1. Open a command console and change directory to the JRE bin folder.
 
-<code>
-cd (ProgramData)/Actian/IntegrationManager/jre/bin
-keytool -genkeypair -alias integration-manager -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore keystore.p12 -validity 3650
-</code>
+    ```
+    cd (ProgramData)/Actian/IntegrationManager/jre/bin
+    ```
 
-## Step 2: Configure Integration Manager
+2. Create a new keystore file using Java keytool. You can use whatever alias and filename you choose. In this example, we are using "integration-manager" and "keystore.p12", respectively.
 
-For illustration purposes, we are using "integration-manager" and "keystore.p12", respectively.
+    ```
+    keytool -genkeypair -alias integration-manager -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore keystore.p12 -validity 3650
+    ```
 
-* These properties apply to Self-Signed and CA-Signed keystores 
-* Note that any application.properties change requires a restart of the Integration Manager Service
-* It is always good practice to make sure you do not have duplicate properties in your file
+3. You will be prompted to set a keystore password and also add identity details (name, company, address, etc.).
 
-Add to application.properties:
+## Step 2: Configure Integration Manager SSL Properties
+
+Note the following:
+
+* These properties apply to Self-Signed and CA-Signed keystores.
+* Any change to application.properties requires a restart of the Integration Manager Service.
+* It is always best practice to make sure you do not have duplicate properties in your file.
+
+Add the following to application.properties. You can use whatever alias and filename you choose. In this example, we are using "integration-manager" and "keystore.p12", respectively.
 
 ```
 # Enable SSL
@@ -93,16 +108,18 @@ im.base-url=https://IM_SERVER_HOSTNAME:${server.port}
 
 ## Step 3: Import Your Certificates into Java jre/lib/security/cacerts
 
-"cacerts" is an embedded keystore for the Java Runtime Environment.
+The “cacerts” directory is an embedded keystore for the Java Runtime Environment.
 
-Export the certificate out of the keystore:
+To import your certificates:
 
-<code>
-keytool -exportcert -alias integration-manager -keystore keystore.p12 -file integration-manager.cer -storetype pkcs12 -noprompt -storepass D0N0tU5eTh1sP@ssW0rd!
-</code>
+1. Export the certificate out of the keystore:
 
-Import the certificate to the jre/lib/security/cacerts keystore:
+   ```
+      keytool -exportcert -alias integration-manager -keystore keystore.p12 -file integration-manager.cer -storetype pkcs12 -noprompt -storepass D0N0tU5eTh1sP@ssW0rd!
+   ```
 
-<code>
-keytool -import -alias integration-manager -file integration-manager.cer -keystore "(ProgramData)/Actian/IntegrationManager/jre/lib/security/cacerts" -storepass D0N0tU5eTh1sP@ssW0rd!
-</code>
+2. Import the certificate to the jre/lib/security/cacerts keystore:
+
+   ```
+   keytool -import -alias integration-manager -file integration-manager.cer -keystore "(ProgramData)/Actian/IntegrationManager/jre/lib/security/cacerts" -storepass D0N0tU5eTh1sP@ssW0rd!
+   ```

@@ -8,10 +8,10 @@ title: Kubernetes
 
 Integration Manager deployment is fully supported within a Kubernetes cluster using Helm and industry standard ArgoCD deployment.
 
-In fact, the Actian DataCloud Platform is deployed across multiple Kubernetes clusters.
+In fact, the Actian DataCloud Platform itself is deployed across multiple Kubernetes clusters.
 
 These deployments typically require a brief, remote Professional Services engagement including:
-* High level introduction to Integration Manager Services, how they communicate and interact
+* High-level introduction to Integration Manager Services, how they communicate and interact
 * Database schema, scripts, and bootstrapping
 * RabbitMQ exchange and queue bootstrapping
 * Initial configuration of NGINX and Route53 resources
@@ -23,7 +23,7 @@ These deployments typically require a brief, remote Professional Services engage
 
 Specific infrastructure requirements must exist prior to the Professional Services engagement.
 
-Client must provide at least two environments (test and production) and demonstrate in-house competence in the following areas:
+You must provide at least two environments (test and production) and demonstrate in-house competence in the following areas:
 * Kubernetes Admin Competency
 * Basic understanding of Helm
 * Kubernetes Cluster, AWS EKS Cluster, Azure AKS Cluster, or GKE Cluster

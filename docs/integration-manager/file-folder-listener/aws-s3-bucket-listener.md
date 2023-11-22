@@ -1,13 +1,8 @@
 ---
-layout: default
 title: AWS S3 Bucket Listener
-tags:
-  - Content Issues
 ---
 
 # AWS S3 Bucket Listener
-
-## Overview
 
 The AWS S3 Bucket Listener monitors S3 buckets for files and will execute a pre-defined Job Configuration (config-id) when triggered.
 
@@ -25,9 +20,12 @@ aws.s3.secretkey=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 ## Listener Configuration
 
-Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization.
+:::note[Notes]
 
-**<font color="red">Where are the instructions for File Folder Listener Authorization?</font>**
+* The File Folder Listener Service must be restarted for any configuration changes to take effect.
+* Make sure you have already completed [Authorizing the File Folder Listener Service](./file-folder-listener-service#authorizing-the-file-folder-listener-service).
+
+:::
 
 **listeners.yml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml

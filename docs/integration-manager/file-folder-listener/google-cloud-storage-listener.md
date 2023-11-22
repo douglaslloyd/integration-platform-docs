@@ -1,12 +1,9 @@
 ---
-layout: default
 title: Google Cloud Storage Listener
 tags:
  - Content Issues
 ---
 # Google Cloud Storage Listener
-
-## Overview
 
 The Google Cloud Storage Listener monitors Google Storage buckets for files and will execute a pre-defined Job Configuration (config-id) when triggered.
 
@@ -25,9 +22,16 @@ gcp.storage.service-account-key=C:/ProgramData/AccessKeys/gcp-account-name-1-935
 
 ## Listener Configuration
 
-Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization.
+:::note[Notes]
 
-**<font color="red">Where are the instructions for File Folder Listener Authorization?</font>**
+* The File Folder Listener Service must be restarted for any configuration changes to take effect.
+* Make sure you have already completed [Authorizing the File Folder Listener Service](./file-folder-listener-service#authorizing-the-file-folder-listener-service).
+
+:::
+
+**<font color="red">Current Help says this:<br /> file-folder-listener-listeners.yml: <br />Configure these properties in &nbsp;ProgramDataDirectory>\Actian\FileFolderListener\conf\file-folder-listener-listeners.yml:</font>**
+
+
 
 **listeners.yml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml

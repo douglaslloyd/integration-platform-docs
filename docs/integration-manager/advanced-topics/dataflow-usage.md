@@ -12,7 +12,10 @@ For convenience, DataFlow 8.0 is embedded within Integration Manager powered by 
 
 ## How it Works
 
-Integration Manager uses the dr command line interface to execute DataFlow applications. Before creating any DataFlow configurations, you should familiarize yourself with the dr interface concepts. You can learn more about these concepts at https://docs.actian.com/dataflow/7.0/#page/TroubleshootingRef%2FUsing_dr.htm%23.
+Integration Manager uses the dr command line interface to execute DataFlow applications. Before creating any DataFlow configurations, you should familiarize yourself with the dr interface concepts. You can learn more about these concepts in the DataFlow <a href="https://docs.actian.com/dataflow/8.0/#page/TroubleshootingRef/TroubleshootRef_Title.htm" className="externalLink" target="_blank">Troubleshooting and Reference Guide</a>.
+
+**<font color="red">This link was broken, and also linked to DataFlow version 7.0. What strategy do we want to use to ensure that links to other documentation are updated with new releases?</font>**
+
 
 Three DataFlow application types are supported:
 
@@ -20,7 +23,7 @@ Three DataFlow application types are supported:
 * JSON Graph (.json)
 * Java Application (.jar)
 
-To learn more about creating DataFlow applications, see https://docs.actian.com/dataflow/8.0/.
+To learn more about creating DataFlow applications, see the <a href="https://docs.actian.com/dataflow/8.0/" className="externalLink" target="_blank">DataFlow Documentation</a>.
 
 ## RushScript (.js) Setup
 
@@ -56,6 +59,5 @@ To learn more about creating DataFlow applications, see https://docs.actian.com/
 
 ## Prerequisites
 
-DataCloud subscribers have access to DataFlow out-of-box without additional configuration.
-
-On-premise and VPC deployments of Integration Manager may require additional setup, see Server Admin > Dataflow Properties.
+* DataCloud subscribers have access to DataFlow out-of-box without additional configuration.
+* On-premise and VPC deployments of Integration Manager may require additional setup. See **Server Admin** > **Dataflow Properties**.

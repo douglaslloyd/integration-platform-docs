@@ -1,11 +1,11 @@
 ---
-title: QuickStart Install
+title: Quick Start Installation
 hide_table_of_contents: true
 tags:
  - Content Issues
 ---
 
-# QuickStart Install
+# Quick Start Installation
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -78,7 +78,7 @@ import TabItem from '@theme/TabItem';
 
    :::note
 
-   Remember that log file data will survive uninstallation/reinstallation.
+   Log file data will survive uninstallation/reinstallation.
 
    :::
 
@@ -156,7 +156,7 @@ import TabItem from '@theme/TabItem';
 
    :::note
 
-   Remember that log file data will survive uninstallation/reinstallation.
+   Log file data will survive uninstallation/reinstallation.
 
    :::
 

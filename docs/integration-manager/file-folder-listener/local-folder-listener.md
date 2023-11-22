@@ -1,20 +1,18 @@
 ---
-layout: default
 title: Local Folder Listener
-tags:
- - Content Issues
 ---
 # Local Folder Listener
-
-## Overview
 
 The Local Folder Listener monitors file folders for files and will execute a pre-defined Job Configuration (config-id) when triggered.
 
 ## Listener Configuration
 
-Note that the File Folder Listener Service must be restarted for any configuration changes to take effect. Make sure you have already completed: File Folder Listener Authorization.
+:::note[Notes]
 
-**<font color="red">Where are the instructions for File Folder Listener Authorization?</font>**
+* The File Folder Listener Service must be restarted for any configuration changes to take effect.
+* Make sure you have already completed [Authorizing the File Folder Listener Service](./file-folder-listener-service#authorizing-the-file-folder-listener-service).
+
+:::
 
 **listeners.yml**
 (ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml
