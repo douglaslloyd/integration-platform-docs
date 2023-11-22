@@ -3,6 +3,8 @@ layout: default
 title: Integration Engines
 ---
 
+**<font color="red">Jason's GitHub Pages content puts this topic under Server Administration. Is that the right place for this topic?</font>**
+
 Integration Manager has the capability to leverage different Actian Integration Engines to execute jobs, depending on the use case. Generally, Integration Manager will install the latest GA patch of any supported Integration Engine as of release date. It is recommended that you first update to the latest Integration Manager version before manually patching an Integration Engine.
 
 ## Integration Engines by Version
