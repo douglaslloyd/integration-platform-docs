@@ -17,7 +17,7 @@ function Version() {
       permalink="/versions"
       description="Integration Platform Documentation Versions">
       <main className="container margin-vert--lg">
-        <div class="custom">
+        <div className="custom">
           <style>{css}</style>
           <h1>Integration Platform Documentation Versions</h1>
         </div>
@@ -64,7 +64,7 @@ function Version() {
         </div> */}
 
         <h2>Previous Versions</h2>
-          <p>Integration Platform documentation for releases prior to version 3.1 has not been migrated to the new documentation platform. Links to documentation for older releases are listed below.</p>
+          <p>Integration Platform documentation for releases prior to version 3.1 has not been migrated to the new documentation platform.<br />Links to documentation for older releases are listed below.</p>
         <div className="margin-bottom--lg">
           <table>
             <tbody>
