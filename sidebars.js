@@ -127,6 +127,7 @@ const sidebars = {
           label: 'Server Administration',
           //link: {type: 'doc', id: 'integration-manager/server-administration/server-administration'},
           items: [
+            'integration-manager/server-administration/server-administration-overview',
             'integration-manager/server-administration/security-enabling-https',
             'integration-manager/server-administration/security-encryption-at-rest',
             'integration-manager/server-administration/production-architecture',
@@ -147,6 +148,7 @@ const sidebars = {
           type: 'category',
           label: 'File Folder Listener',
           items: [
+            'integration-manager/file-folder-listener/file-folder-listener-service',
             'integration-manager/file-folder-listener/local-folder-listener',
             'integration-manager/file-folder-listener/aws-s3-bucket-listener',
             'integration-manager/file-folder-listener/azure-blob-storage-listener',
