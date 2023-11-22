@@ -31,9 +31,9 @@ These properties are located in &lt;ProgramDataDirectory>\Actian\FileFolderListe
 
 The File Folder Listener uses OAuth 2.0 Device Authorization (https://datatracker.ietf.org/doc/html/rfc8628) to securely connect to the Integration Manager API.
 
-:::caution[Note]
+:::caution[Important]
 
-We strongly recommend enabling HTTPS for your Integration Manager server to protect your data across the wire. For more information, see [Enabling HTTPS](../server-administration/security-enabling-https).
+We strongly recommend that you enable HTTPS for your Integration Manager server to protect your data across the wire. For more information, see [Enabling HTTPS](../server-administration/security-enabling-https).
 
 :::
 

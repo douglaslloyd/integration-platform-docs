@@ -11,9 +11,9 @@ tags:
    * Actian DataCloud: [https://console.im.actiandatacloud.com/ui/](https://console.im.actiandatacloud.com/ui/)
 2. On the login page, enter the default user credentials (admin/admin).
      
-   :::info[Important]
+   :::caution[Important]
 
-      It is highly recommended that you change the admin password. Refer to [Changing Your Password](./editing-your-profile#changing-your-passwordQQQ).
+      We strongly recommended that you change the admin password. Refer to [Changing Your Password](./editing-your-profile#changing-your-password).
 
    :::
 
