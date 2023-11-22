@@ -1,14 +1,12 @@
 ---
-layout: default
 title: Manual Agent Registration
-nav_order: 10
-parent: Advanced Topics
 ---
+
 # Manual Agent Registration
 
 If you are having issues starting or registering a new or existing Agent installation, you can use Manual Agent Registration.
 
-## Prerequisites:
+## Prerequisites
 
 * DataCloud or Avalanche Subscription
 * Install Integration Agent 3.1.0 or later.
@@ -16,7 +14,7 @@ If you are having issues starting or registering a new or existing Agent install
 
 ## Step 1: Retrieve a User Code
 
-1. Open browser
+1. Open the browser.
 2. Navigate to: `https://api.im.actiandatacloud.com/v2/api/device/code?client_id=integration-agent&host=[agent machine hostname]`<br/>
  where `[agent machine hostname]` is the hostname of your agent.
  
@@ -38,11 +36,11 @@ Response:
 }
 ```
 
-## Step 2: Activate Device Code
+## Step 2: Activate the Device Code
 
-1. Copy the url from Step 1 Response in [verification uri complete]
-2. Paste in a new browser tab and click Enter
-3. You will be asked to authenticate with Username and API Password (see Prerequisites)
+1. Copy the url from the Step 1 Response in `[verification uri complete]`.
+2. Paste in a new browser tab and press Enter.
+3. You will be asked to authenticate with Username and API Password (see Prerequisites above).
 
 Response:
 ```

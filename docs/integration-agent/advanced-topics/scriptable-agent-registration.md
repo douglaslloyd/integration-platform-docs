@@ -1,9 +1,7 @@
 ---
-layout: default
 title: Scriptable Agent Registration
-nav_order: 30
-parent: Advanced Topics
 ---
+
 # Scriptable Agent Registration
 
 If you need to automate Agent configuration and registration tasks (i.e. direct user interaction with the Agent is not possible), you can use silent install and Scriptable Agent Registration.
@@ -11,9 +9,9 @@ If you need to automate Agent configuration and registration tasks (i.e. direct 
 ## Prerequisites
 
 * DataCloud or Avalanche Subscription
-* Install Integration Agent 3.1.0 or later.
-* Enable an API Password for the User registering the Agent.
-* Access to an API tool such as Postman, SoapUI, or Curl.
+* Install Integration Agent 3.1.0 or later
+* Enable an API Password for the User registering the Agent
+* Access to an API tool such as Postman, SoapUI, or Curl
 
 ## Step 1: Retrieve an Access Token
 

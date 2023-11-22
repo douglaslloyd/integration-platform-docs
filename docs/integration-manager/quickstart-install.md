@@ -62,7 +62,7 @@ The `application.properties` file can be used for a variety of configurations to
 3. To run Integration Manager on a different port, set the property ```server.port``` (default: 8080).
 4. Any change to the `application.properties` file will require a restart of the service.
    * Go to Windows → Administrative Tools → Services.
-   * Right-click on Actian Integration Manager to stop, start, or restart.
+   * Right-click on Actian Integration Manager and select **Stop**, **Start**, or **Restart**.
 
 :::note
    Configuration file changes will survive uninstallation/reinstallation.

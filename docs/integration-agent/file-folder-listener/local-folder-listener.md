@@ -1,9 +1,7 @@
 ---
-layout: default
 title: Local Folder Listener
-nav_order: 1
-parent: Agent File Folder Listener
 ---
+
 # Local Folder Listener
 
 ## Overview
@@ -12,12 +10,14 @@ The Local Folder Listener monitors file folders for files and will execute a pre
 
 ## Listener Configuration
 
-**listeners.yml**
-(ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml
-**OR**
-/etc/opt/actian/integration-agent/conf/listeners.yml (Linux)
+### listeners.yml
 
-NOTE: indentation is critical for YAML syntax!
+* Windows: `(ProgramDataDirectory)/Actian/FileFolderListener/conf/listeners.yml`
+* Linux: `/etc/opt/actian/integration-agent/conf/listeners.yml`
+
+:::caution[Important]
+   Indentation is critical for YAML syntax!
+:::
 
 Example:
 ```

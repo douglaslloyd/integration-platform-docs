@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Run Your First Remote Job
-nav_order: 2
+tags:
+ - Content Issues
 ---
 # Run Your First Remote Job
 
