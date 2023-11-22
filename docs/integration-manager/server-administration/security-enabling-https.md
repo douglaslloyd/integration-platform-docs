@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Enabling HTTPS
 ---
+
 # Enabling HTTPS
  
 :::danger[IMPORTANT!]

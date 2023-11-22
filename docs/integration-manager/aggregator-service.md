@@ -1,9 +1,9 @@
 ---
-layout: default
 title: Aggregator Service
 tags:
  - Content Issues
 ---
+
 # Aggregator Service
 
 * **<font color="red">Ths topic needs more intoduction. It isn't clear how this fits into the Integration Manager.</font>**

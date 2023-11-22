@@ -1,9 +1,9 @@
 ---
-layout: default
 title: Run Job with Input Message
 tags:
  - Content Issues
 ---
+
 # Run Job with Input Message
 
 ## Overview

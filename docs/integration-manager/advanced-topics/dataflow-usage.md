@@ -1,7 +1,7 @@
 ---
-layout: default
 title: DataFlow Job Configs
 ---
+
 # DataFlow Job Configs
 
 ## Overview

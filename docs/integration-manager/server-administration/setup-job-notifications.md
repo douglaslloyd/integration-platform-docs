@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Job Notifications
 ---
+
 # Job Notifications
 
 Integration Manager has the capability of sending email notifications for certain job completion events (not currently available for DataCloud SaaS accounts).
@@ -25,8 +25,7 @@ To configure Integration Manager notification properties:
     # Job Notifications Config
     notifications.enabled=true
     notifications.mailFrom=noreply@yourcompanydomain.com
-    notifications.mailTo=admin@yourcompanydomain.com,finance@yourcompanydomain.com
-    notifications.attachLogs=true
+    notifications.mailTo=admin@yourcompanydomain.com,finance@yourcompanydomain.com    notifications.attachLogs=true
     ```
     
 2. Restart the Integration Manager service.

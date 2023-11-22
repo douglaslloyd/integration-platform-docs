@@ -1,5 +1,4 @@
 ---
-layout: default
 title: JobConfig Aliasing
 tags:
  - Content Issues

@@ -1,9 +1,9 @@
 ---
-layout: default
 title: Server Administration Overview
 tags:
  - Content Issues
 ---
+
 # Server Administration
 
 <font color="red">

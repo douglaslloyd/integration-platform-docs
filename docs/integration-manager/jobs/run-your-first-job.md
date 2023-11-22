@@ -1,9 +1,9 @@
 ---
-layout: default
 title: Run Your First Job
 tags:
  - Content Issues
 ---
+
 # Run Your First Job
 
 :::note

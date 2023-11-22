@@ -1,8 +1,8 @@
 ---
-layout: default
 title: User Management
 hide_table_of_contents: true
 ---
+
 # User Management
 
 Administrators can create and manage users within the <a href="https://im.dev.actiandatacloud.com/ui/admin/users" className="externalLink" target="_blank">Administration Console</a>. Note that User Management requires Account Admin access.

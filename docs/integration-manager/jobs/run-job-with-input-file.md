@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Run Job with Input File
 tags:
  - Content Issues

@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Workload Management
 ---
+
 # Workload Management
 
 ## Overview

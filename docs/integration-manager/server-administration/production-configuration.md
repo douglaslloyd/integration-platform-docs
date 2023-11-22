@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Production Configuration
 ---
+
 # Production Configuration
 
 ## Overview

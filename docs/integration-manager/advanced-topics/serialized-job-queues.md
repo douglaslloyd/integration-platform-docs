@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Serialized Job Queues
 ---
+
 # Serialized Job Queues
 
 ## Overview

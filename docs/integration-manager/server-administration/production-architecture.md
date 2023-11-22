@@ -1,13 +1,11 @@
 ---
-layout: default
 title: Production Architecture
 ---
+
 # Production Architecture
 
 :::note 
-
 The default installation of Integration Manager uses an embedded file-based database and in-memory job queueing. It is appropriate only for trial and demo use.
-
 :::
 
 The following are high-level recommendations only. Actual production deployments should be examined for many other factors, including but not limited to desired workload.

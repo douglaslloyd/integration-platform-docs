@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Encryption-at-Rest
 ---
+
 # Encryption-at-Rest
 
 :::danger[IMPORTANT!]

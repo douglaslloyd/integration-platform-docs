@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Salesforce.com Outbound Messaging
 ---
+
 # Salesforce.com Outbound Messaging API
 
 ## Overview

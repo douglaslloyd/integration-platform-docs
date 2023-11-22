@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Access Control Policies
 ---
+
 # Access Control Policies
 
 By default, non-admin users only have access to JobTemplates and JobConfigs they create. You can grant additional privileges and share Artifacts across users by using Access Control Policies.

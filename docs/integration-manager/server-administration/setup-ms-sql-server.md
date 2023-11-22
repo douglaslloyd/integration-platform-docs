@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Microsoft SQL Server
 ---
+
 # Microsoft SQL Server
 
 ## Overview

@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Securing Macros
 ---
+
 # Securing Macros
 
 You can permanently encrypt macro values by using the Secure flag. Once a macro is flagged as secure, it can never be read outside of the integration engine runtime.

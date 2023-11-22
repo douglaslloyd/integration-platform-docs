@@ -1,8 +1,7 @@
 ---
-layout: default
 title: Monitoring Agent Status
-nav_order: 4
 ---
+
 # Monitoring Agent Status
 
 From the Agents tab, you can:

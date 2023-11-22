@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Troubleshooting
 ---
+
 # Troubleshooting
 
 ## Application Failed to Start

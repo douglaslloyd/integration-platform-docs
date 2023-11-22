@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Release Notes 3.1
 tags:
  - Content Issues

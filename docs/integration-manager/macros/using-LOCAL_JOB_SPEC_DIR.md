@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Using LOCAL_JOB_SPEC_DIR
 tags:
  - Image Issues

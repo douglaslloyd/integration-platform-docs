@@ -1,7 +1,7 @@
 ---
-layout: default
 title: MySQL
 ---
+
 # MySQL
 
 ## Overview

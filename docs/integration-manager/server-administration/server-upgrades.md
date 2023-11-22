@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Server Upgrades
 ---
+
 # Server Upgrades
 
 ## Overview
