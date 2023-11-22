@@ -188,6 +188,7 @@ const sidebars = {
         'integration-agent/quickstart-install',
         'integration-agent/run-your-first-remote-job',
         'integration-agent/monitoring-agent-status',
+        'integration-agent/agent-file-folder-listener',
         {
           type: 'category',
           label: 'On-Premise Data',
