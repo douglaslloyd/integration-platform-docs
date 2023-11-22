@@ -42,10 +42,12 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+  // NOTE: I commented this out to see if this is the cause of an error I got (but cannot reproduce): Failed to execute 'removeChild' on 'Node'
+  // See https://github.com/facebook/react/issues/11538
+  //i18n: {
+  //  defaultLocale: 'en',
+  //  locales: ['en'],
+  //},
 
   presets: [
     [
@@ -128,8 +130,10 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'left',
-            includeCurrentVersion: true,
-             dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            //includeCurrentVersion: true, // This is causing a React error: 
+                                        //React does not recognize the `includeCurrentVersion` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, 
+                                        //spell it as lowercase `includecurrentversion` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
             dropdownActiveClassDisabled: true,
           },
 //          {
