@@ -143,7 +143,6 @@ const sidebars = {
             'integration-manager/server-administration/integration-engines',
           ]
         },
-        'integration-manager/aggregator-service',
         {
           type: 'category',
           label: 'File Folder Listener',
@@ -153,7 +152,21 @@ const sidebars = {
             'integration-manager/file-folder-listener/aws-s3-bucket-listener',
             'integration-manager/file-folder-listener/azure-blob-storage-listener',
             'integration-manager/file-folder-listener/google-cloud-storage-listener',
-          ]
+            {
+              type: 'category',
+              label: 'Application Property Reference',
+              items: [
+                'integration-manager/file-folder-listener/dataconnect-properties',
+                'integration-manager/file-folder-listener/dataflow-properties',
+                'integration-manager/file-folder-listener/datasource-properties',
+                'integration-manager/file-folder-listener/file-repository-properties',
+                'integration-manager/file-folder-listener/queue-connection-properties',
+                'integration-manager/file-folder-listener/scheduling-properties',
+                'integration-manager/file-folder-listener/web-server-properties',
+                'integration-manager/file-folder-listener/worker-properties',
+              ]
+            },
+              ]
         },
         {
           type: 'category',
@@ -163,6 +176,7 @@ const sidebars = {
             'integration-manager/APIs/sfdc-outbound-messaging-api',
               ]
         },
+        'integration-manager/aggregator-service',
         'integration-manager/server-troubleshooting',
       ]
     },
