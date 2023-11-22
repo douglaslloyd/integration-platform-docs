@@ -1,8 +1,8 @@
 ---
 layout: default
-title: QuickStart API Tutorial
+title: Quick Start API Tutorial
 ---
-# QuickStart API Tutorial
+# Quick Start API Tutorial
 
 Integration Manager is an entirely API-driven platform. Every function avaialble via the UI is also available as an API (and more!).
 

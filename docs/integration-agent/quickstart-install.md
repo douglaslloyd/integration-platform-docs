@@ -36,10 +36,10 @@ import TabItem from '@theme/TabItem';
    * Agents Console [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents), or
    * Actian ESD: [https://esd.actian.com/](https://esd.actian.com/).
 2. Right-click the downloaded installer file (integration-agent-xxx-win.exe) and select "Run as administrator".
-3. If you have a previous 3.x.x version installed, you will be coerced to uninstall first. Uninstall will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc...).
+3. If you have a previous 3.x.x version installed, you will be prompted to uninstall first. Uninstall will shutdown running services and prepare for library updates, it will NOT remove or alter ProgramData (conf files, logs, etc.).
 4. Accept the License Agreement.
-5. Select the installation path (default: C:/Program Files/Actian/IntegrationAgent).
-6. Select the shared data path (default: C:/ProgramData/Actian/IntegrationAgent).
+5. Select the installation path (default: `C:/Program Files/Actian/IntegrationAgent`).
+6. Select the shared data path (default: `C:/ProgramData/Actian/IntegrationAgent`).
 7. Installation should take less than a minute.
 8. If installed locally, open [http://localhost:6001/home](http://localhost:6001/home). If installed on a network server, open http://\[agent hostname]:6001/home.
 9. Register the Agent using your DataConnect Cloud or Avalanche credentials. Registration progress will be shown to confirm that your Agent is operational.
@@ -74,12 +74,10 @@ import TabItem from '@theme/TabItem';
    * DataConnect Cloud: [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents)
    * Avalanche Console: [https://avalanche.actiandatacloud.com/im/agents](https://avalanche.actiandatacloud.com/im/agents)
    * Private Cloud on Kubernetes: https://\[your hosted domain]/ui/agents
-2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log)
+2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`)
 
    :::note
-
    Log file data will survive uninstallation/reinstallation.
-
    :::
 
 </TabItem>
@@ -112,10 +110,10 @@ import TabItem from '@theme/TabItem';
    * Agents Console [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents), or
    * Actian ESD: [https://esd.actian.com/](https://esd.actian.com/).
 2. Locate downloaded rpm file (integration-agent-3.x.x.noarch.rpm).
-3. Switch to root user:   `sudo su`
+3. Switch to root user: `sudo su`
 4. Install rpm with yum: `yum install integration-agent-3.x.x.noarch.rpm`
-5. Confirm installation path (default: /opt/actian/integration-agent).
-6. Confirm shared data path (default: /etc/opt/actian/integration-agent).
+5. Confirm installation path (default: `/opt/actian/integration-agent`).
+6. Confirm shared data path (default: `/etc/opt/actian/integration-agent)`.
 7. Installation should take less than a minute.
 8. If installed locally, open [http://localhost:6001/home](http://localhost:6001/home). If installed on a network server, open http://\[agent hostname]:6001/home.
 9. Register the Agent using your DataConnect Cloud or Avalanche credentials. Registration progress will be shown to confirm that your Agent is operational.
@@ -152,19 +150,17 @@ import TabItem from '@theme/TabItem';
    * DataConnect Cloud: [https://console.im.actiandatacloud.com/ui/agents](https://console.im.actiandatacloud.com/ui/agents)
    * Avalanche Console: [https://avalanche.actiandatacloud.com/im/agents](https://avalanche.actiandatacloud.com/im/agents)
    * Private Cloud on Kubernetes: https://\[your hosted domain]/ui/agents
-2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log)
+2. You can monitor service activity and get important additional information from the log file on the Agent machine (default: `C:/ProgramData/Actian/IntegrationAgent/logs/Agent.log`)
 
    :::note
-
    Log file data will survive uninstallation/reinstallation.
-
    :::
 
 ### Start/Stop/Status
 
-Start:   `sh -x /etc/init.d/agentservice start`
+Start: `sh -x /etc/init.d/agentservice start`
 
-Stop:   `sh -x /etc/init.d/agentservice stop`
+Stop: `sh -x /etc/init.d/agentservice stop`
 
 Status: `sh -x /etc/init.d/agentservice status`
 
