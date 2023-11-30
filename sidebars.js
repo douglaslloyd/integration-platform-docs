@@ -19,7 +19,6 @@ const sidebars = {
       id: 'intro',
       label: 'Overview',
     },
-    'architecture',
     'release-notes',
     //    'someOtherDoc',
     {
@@ -48,14 +47,19 @@ const sidebars = {
           type: 'category',
           label: 'Configurations',
           items: [
-            'integration-manager/configurations/creating-configurations',
+            'integration-manager/configurations/configurations-overview',
+            'integration-manager/configurations/creating-configurations-on-prem',
+            'integration-manager/configurations/creating-configurations-cloud',
             'integration-manager/configurations/editing-configuration-details',
             'integration-manager/configurations/activating-or-inactivating-configurations',
-            'integration-manager/configurations/editing-configuration-schedules',
-            'integration-manager/configurations/managing-configuration-macros',
+            'integration-manager/configurations/duplicating-configurations',
+            'integration-manager/configurations/creating-configuration-macros',
+            'integration-manager/configurations/importing-configuration-macros',
             'integration-manager/configurations/managing-configuration-files',
-            'integration-manager/configurations/managing-configuration-jobs',
             'integration-manager/configurations/running-configurations',
+            'integration-manager/configurations/editing-configuration-schedules',
+            'integration-manager/configurations/serialized-job-queues',
+            'integration-manager/configurations/dataflow-usage',
           ]
         },
         {
@@ -79,13 +83,13 @@ const sidebars = {
           label: 'Macros',
           items: [
             'integration-manager/macros/macros-overview',
-            'integration-manager/macros/managing-macros',
-            'integration-manager/macros/creating-private-macros',
+            //'integration-manager/macros/managing-macros',
+            'integration-manager/macros/creating-macros',
             'integration-manager/macros/importing-macros',
             //'integration-manager/macros/viewing-macros',
             'integration-manager/macros/editing-macros',
-            'integration-manager/macros/creating-public-macros',
-            'integration-manager/macros/managing-public-macros',
+            //'integration-manager/macros/creating-public-macros',
+            //'integration-manager/macros/managing-public-macros',
             //'integration-manager/macros/runtime-macros',
             'integration-manager/macros/using-LOCAL_JOB_SPEC_DIR',
             'integration-manager/macros/securing-macros',
@@ -103,14 +107,6 @@ const sidebars = {
           label: 'Agents and Devices',
           items: [
             'integration-manager/agents-and-devices/managing-agents-and-devices',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'Advanced Topics',
-          items: [
-            'integration-manager/advanced-topics/serialized-job-queues',
-            'integration-manager/advanced-topics/dataflow-usage',
           ]
         },
         {
