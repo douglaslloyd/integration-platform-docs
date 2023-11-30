@@ -8,5 +8,5 @@ A configuration is a set of properties and parameters that specify when, where, 
 
 The process for creating a configuration depends on whether you are using the on-prem or cloud version of Integration Manager. Refer to the following topics:
 
-* [Creating Configurations - Cloud](./creating-configurations)
+* [Creating Configurations - Cloud](./creating-configurations-cloud)
 * [Creating Configurations - On-Prem](./creating-configurations-on-prem)
