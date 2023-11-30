@@ -41,7 +41,7 @@ You can download a log file for a specific job. See [Downloading the Log File](.
 
 ## Viewing Run Details for a Specific Job
 
-1. Selecty the **Jobs** tab.
+1. Select the **Jobs** tab.
    
    The **Run History** page is displayed with a list of execution history:
 

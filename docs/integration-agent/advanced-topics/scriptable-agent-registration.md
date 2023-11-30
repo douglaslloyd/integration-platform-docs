@@ -95,6 +95,6 @@ im.user-code=[user code]
 
 ## Step 4: Update the Agent
 
-import PartialExample from '../../reuse/_update_the_agent.mdx';
+import PartialContent from '../../reuse/_update_the_agent.mdx';
 
-<PartialExample name="update_the_agent" />
+<PartialContent name="update_the_agent" />

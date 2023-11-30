@@ -5,7 +5,7 @@ hide_table_of_contents: true
 
 # Worker Properties
 
-| Property| Description| Default Value |
+| Property| Description| Default |
 | --- | --- | --- |
 | `worker.concurrency` | Number of concurrent jobs this worker is allowed to process |  |
 | `worker.destinationId` | The destination IS (job queue) this worker pulls jobs from |  |

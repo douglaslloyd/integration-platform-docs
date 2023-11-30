@@ -1,5 +1,7 @@
 ---
 title: Creating a Configuration From a Template
+tags:
+ - Content Issues
 ---
 
 # Creating a Configuration From a Template

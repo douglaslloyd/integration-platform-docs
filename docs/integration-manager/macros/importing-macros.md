@@ -6,64 +6,47 @@ tags:
 
 # Importing Macros
 
+Importing macros by uploading a macro definition file (see [Macro File Examples](../macros/importing-macros#macro-file-examples)) allows you to upload multiple macros without having to manually define each macro.
+
 You can import macros directly from a file to any object (Account, Template, User, Configuration). **<font color="red">Need details about Account object.</font>**
 
 :::note[Notes]
-
 * You can import macrodef files in XML (v9) or JSON (v9 and later) formats. For examples, see [Macro File Examples](./importing-macros#macro-file-examples).
 
 * v9 macros cannot be encrypted. **<font color="red">I read this at https://actian.atlassian.net/wiki/spaces/IM/pages/14188908/DataConnect+Macro+Management. Is this true?</font>**
 
 * Imported macrodef files with encrypted values will only import the macro name. The value will be empty.
-
 :::
 
 You can import macros in two ways:
-* Method 1: Clicking ![the Add Macro button](/img/icons/Add-Macro-Button.png).
-* Method 2: Clicking the dropdown arrow next to ![the Add Macro button](/img/icons/Add-Macro-Button.png); on the top right of the screen, and selecting **Import Macros**.
 
-## Method 1: Add Macros
+* Method 1: Using the **Add Macros** dialog, which allows you to both upload a macro file and manually enter name/value pairs
+* Method 2: Using the **Upload Macro File** dialog, which only allows you to upload a file.
 
-1. Click ![the Add Macro button](/img/icons/Add-Macro-Button.png).
-   
-   This opens the **Add Macros** dialog, which allows you to both upload a macro file as well as enter name-value pairs manually.
-  
-2. In the **Add Macros** dialog, drag and drop or browse and select an existing XML or JSON file:
+## Method 1: Add Macros Dialog
 
-    ![Add Macros Drop](/img/Add-Macros-Drop.png)
+import PartialContent1 from '../../reuse/_import_via_add_macros_dialog.mdx';
 
-3. The name-value pairs defined in the macro file are added to the **Add Macros** dialog:
+<PartialContent1 name="import_via_add_macros_dialog" />
 
-    ![Macros Imported](/img/Macros-Imported.png)
-
-import PartialExample from '../../reuse/_secure_macro_warning.mdx';
-
-1. <PartialExample name="secure_macro_warning" />
-
-2. Manually enter any additional name-value pairs as desired.
-3. Click &nbsp;<img src="/img/icons/Continue-Button.png" style={{width: 140}} alt="the CONTINUE button" />&nbsp;.
-4. You are returned to the Macros list:
+7. You are returned to the Macros list:
 
     ![Macros Imported List](/img/Macros-Imported-List.png)
 
-5. Click the empty space in the **Description** column, enter a descriptive name, and press Enter.
+8. For each macro, click the empty space in the **Description** column, enter a descriptive name, and press Enter.
 
-## Method 2: Import Macros
+    ![Macros Imported List](/img/Macros-Imported-List-Description.png)
 
-1. Click the dropdown arrow next to ![the Add Macro button](/img/icons/Add-Macro-Button.png); on the top right of the screen, and select **Import Macros**:
+## Method 2: Upload Macro File Dialog
+
+1. Click the dropdown arrow next to the **Add Macro** button and select **Import Macros**:
    
-    ![Import Macros Dropdown](/img/Import-Macros-Dropdown.png)
+    ![Import Macros Dropdown](/img/Import-Macros-Dropdown1.png)
 
-2.  In the **Upload Macro File** dialog, drag and drop or browse and select an existing XML or JSON file:
+import PartialContent2 from '../../reuse/_import_via_upload_macro_file_dialog.mdx';
 
-    ![Upload Macro File Drop](/img/Upload-Macro-File-Drop.png)
+<PartialContent2 name="import_via_upload_macro_file_dialog" />
 
-3. As soon as you drop or select a file, the macros are added and you are returned to the Macros list:
-
-    ![Macros Imported List](/img/Macros-Imported-List.png)
-
-4. Click the empty space in the **Description** column, enter a descriptive name, and press Enter.
-   
 ## Macro File Examples
 
 **<font color="red">I added this section. Is this helpful, or do we presume that all readers already know the details about macrodef file formats?</font>**

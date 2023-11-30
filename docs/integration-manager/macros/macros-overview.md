@@ -6,15 +6,17 @@ tags:
 
 # Macros Overview
 
+**<font color="red">We use Job Config, JOBCONFIG, Config, and Configuration throughout the docs. Are all configurations considered Job Configs? Is this because the runtime macros property names are JOB_CONFIG_*? It would be helpful to use consistent terminology throughout.</font>**
+
 Macros enable you to run a single integration for different types of users without having to modify the integration itself. Macros are defined when the integration is in the configuration state. Macros can save you time and reduce errors at runtime.
 
-Macros are placeholders you create for values that are typically used during design and runtime, such as target paths, and credentials to access databases. By creating and defining these placeholders, and assigning them a descriptive name, you can easily redefine them as needed.
+Macros are placeholders you create for values that are typically used during design and runtime, such as target paths and credentials to access databases. By creating and defining these placeholders  and assigning them a descriptive name, you can easily redefine them as needed.
 
-For example, let’s say you need to run an integration for testing before you run it in a production environment. You know that the test environment and the production environment use different target paths. In this case, you create two configurations from your integration.
+For example, let’s say you need to run an integration for testing before you run it in a production environment. The test environment and the production environment use different target paths. In this case, you create two configurations from your integration.
 
-When you create the first configuration you define a macro named TARGET_PATH, and set it to the testing environment target path.
+When you create the first configuration, you define a macro named TARGET_PATH and set the value to the testing environment target path.
 
-When your testing is complete you create another configuration, and change the TARGET_PATH to the production environment path.
+When your testing is complete you create another configuration and set the TARGET_PATH value to the production environment path.
 
 ## Macro Hierarchy
 
@@ -23,8 +25,6 @@ Macros use a hierarchy to allow flexibility (and privacy) across your deployed i
 You can specify values for macros at the account level or for specific templates and configurations. Macros are applied and overridden in the following order:
 
 ![Integration Manager Macro Hierarchy Simple](/img/Integration-Manager-Macro-Hierarchy-Simple.png)
-
-**<font color="red">Help currently states that the ACCOUNT (Public) is for administrators only. Does this need to be added to the first box?</font>**
 
 ### Example Inheritance
 
@@ -36,11 +36,11 @@ You can specify values for macros at the account level or for specific templates
 
 Account-level macros are global and read-only.
 
-They can be viewed by all users in your account. They can only be created, edited, deleted by account admin users.
+They can be viewed by all users in your account. They can be created, edited, and deleted only by account admin users.
 
 ### User (Private) Macros
 
-User macros can further increase the portability AND privacy of your integrations. User macros are applied for the **submitted by** user when a job is executed. Submitted by will always be the Job Config owner for scheduled jobs.
+User macros can further increase the portability and privacy of your integrations. User macros are applied for the **submitted by** user when a job is executed. "Submitted by" users will always be the Job Config owner for scheduled jobs.
 
 They can only be viewed, created, edited, deleted by the associated user, or by account admin users.
 
@@ -58,15 +58,11 @@ Note that templates are completely optional. Many configurations will not have a
 
 ### Configuration Macros
 
-Configuration macros... **<font color="red">Need to describe the difference between config macros and template macros, and when you use each.</font>**
-
-They can be viewed by any user who has at least read access to the Job Config. They can only be created, edited, deleted with write access to the Job Config, by the Job Config owner, or by account admin users.
+Configuration macros can be viewed by any user who has at least read access to the configuration. They can only be created, edited, and deleted by users with write access to the configuration, by the configuration owner, or by account admin users.
 
 ### Runtime Macros
 
-**<font color="red">Are these considered a type of macro parallel to the other types in this section, or does this deserve its own topic?</font>**
-
-These key-value pairs are injected into every integration job. 
+These name/value pairs are injected into every integration job. 
 
 You can use these to:
 
@@ -76,7 +72,7 @@ You can use these to:
 
 
 | Macro Name | Macro Value Description |
-| :--------- | :---------------------- |
+| :--- | :--- |
 | **JOB\_ID** | Id of the currently executing job. |
 | **JOB\_CONFIG\_ID**  | Configuration id of the currently executing job. |
 | **JOB\_TEMPLATE\_ID** | Template id of the currently executing job. Optional. |

@@ -7,7 +7,7 @@ tags:
 
 # Queue Connection Properties
 
-| Property| Description| Default Value |
+| Property| Description| Default |
 | --- | --- | --- |
 | `queue.host` | RabbitMQ server name or Cluster domain | — |
 | `queue.port`| RabbitMQ messaging port | `8063`|

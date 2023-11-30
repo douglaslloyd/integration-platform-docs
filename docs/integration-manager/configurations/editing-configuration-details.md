@@ -17,17 +17,7 @@ To edit configuration details:
 
    ![Configuration Details Page](/img/Configuration-Details-Page.png)
 
-4. Edit the configuration properties as desired. Refer to [Configuration Properties](editing-configuration-details#configuration-properties) for a list of all configuration properties.
-
-You can also perform additional actions from the panel on the top left of the **Configuration Details** page:
-
-   ![Configuration Details Panel](/img/Configuration-Details-Panel.png)
-
-Refer to the following:
-
-* [Managing Configuration Macros](./managing-configuration-macros) 
-* [Managing Configuration Files](./managing-configuration-files) 
-* [Managing Configuration Jobs](./managing-configuration-jobs) 
+4. Edit the configuration properties as desired. See [Configuration Properties](editing-configuration-details#configuration-properties).
 
 ## Configuration Properties
 

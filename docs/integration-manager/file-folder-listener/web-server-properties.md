@@ -7,7 +7,7 @@ tags:
 
 # Web Server Properties
 
-| Property| Description| Default Value |
+| Property| Description| Default |
 | --- | --- | --- |
 | `im.base-url` | Allows you to set or customize the base URL for creating or resolving API URLs | `http://IM_SERVER_DOMAIN_NAME:{server.port}` |
 | `security.require-ssl` | Strictly disallows any non-https traffic | `false` |

@@ -12,7 +12,7 @@ On the **My Profile** page, non-admin users can edit their name and change their
 
    ![Profile Dropdown](/img/profile-dropdown.png)
 
-## Editing your Name
+## Editing Your Name
 
 1. Edit the **First Name** and **Last Name** fields.
 2. Click **Update User**.
