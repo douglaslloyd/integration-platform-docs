@@ -6,6 +6,6 @@ export default function Feedback({ resource }) {
       <input type="hidden" name="form-name" value="feedback-form" />
       <label>Your feedback helps us improve our docs.</label><textarea rows={5} cols={30}/>
       <button type="submit">Send</button>
-      </form>
-      </div>;
+    </form>
+  </div>;
 }
