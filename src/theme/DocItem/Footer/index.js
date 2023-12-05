@@ -45,6 +45,8 @@ function EditMetaRow({
     </div>
   );
 }
+
+import Feedback from '../../../components/Feedback';
 export default function DocItemFooter() {
   const {metadata} = useDoc();
   const {editUrl, lastUpdatedAt, formattedLastUpdatedAt, lastUpdatedBy, tags} =
@@ -56,17 +58,21 @@ export default function DocItemFooter() {
     return null;
   }
   return (
-    <footer
-      className={clsx(ThemeClassNames.docs.docFooter, 'docusaurus-mt-lg')}>
-      {canDisplayTagsRow && <TagsRow tags={tags} />}
-      {canDisplayEditMetaRow && (
-        <EditMetaRow
-          editUrl={editUrl}
-          lastUpdatedAt={lastUpdatedAt}
-          lastUpdatedBy={lastUpdatedBy}
-          formattedLastUpdatedAt={formattedLastUpdatedAt}
-        />
-      )}
-    </footer>
+    <>
+      <footer
+        className={clsx(ThemeClassNames.docs.docFooter, 'docusaurus-mt-lg')}
+      >
+        {canDisplayTagsRow && <TagsRow tags={tags} />}
+        {canDisplayEditMetaRow && (
+          <EditMetaRow
+            editUrl={editUrl}
+            lastUpdatedAt={lastUpdatedAt}
+            lastUpdatedBy={lastUpdatedBy}
+            formattedLastUpdatedAt={formattedLastUpdatedAt}
+          />
+        )}
+      </footer>
+      <Feedback resource={editUrl} />
+    </>
   );
 }
