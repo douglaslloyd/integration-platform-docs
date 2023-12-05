@@ -2,6 +2,7 @@
 title: Accessing the Integration Manager
 tags:
   - Image Issues
+  - Content Issues
 ---
 
 # Accessing the Integration Manager
@@ -14,6 +15,8 @@ tags:
    * Local Machine: [http://localhost:8080/ui/](http://localhost:8080/ui/)
    * Actian DataCloud: [https://console.im.actiandatacloud.com/ui/](https://console.im.actiandatacloud.com/ui/)
 2. On the login page, enter your user credentials.
+   **<font color="red">How do you reset your password when you've forgotten it?</font>**
+
 3. Integration Manager opens to the **Dashboard** page (see [Dashboard](./dashboard)):
 
    ![Dashboard](/img/Dashboard.png)

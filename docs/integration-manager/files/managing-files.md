@@ -64,7 +64,7 @@ Only Admins can delete public files or user files owned by another user.
 2. Use the toggle control to select **User Files** or **Public Files**.
 3. Select the file(s) you wish to delete and click **Delete File**:
 
-   ![Uploading User Files](/img/Delete-Files.png)
+   ![Delete Files](/img/Delete-Files.png)
 
 ## Downloading Files
 

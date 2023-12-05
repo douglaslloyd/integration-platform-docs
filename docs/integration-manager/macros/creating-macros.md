@@ -40,17 +40,20 @@ To create a Public Macro:
 
 ## Creating Your First Macro
 
-<font color="red">Why is the Continue button enabled before any name-value pairs have been added?</font>
+<font color="red">
+* Why is the CONTINUE button enabled before any name-value pairs have been added?
+* How do you get the **Add Macros** dialog again after creating your first macro? From then on, I can only add blank macros directly to the Macros list or import a macro file. I can't find a way to reopen the **Add Macros** dialog (which allows you to both enter name-value pairs and upload files in the same dialog).
+</font>
 
 import PartialContent1 from '../../reuse/_add_macro.mdx';
 
 <PartialContent1 name="add_macro" />
 
-10.  You are returned to the **Macros** page, which lists the new macro:
+1.   You are returned to the **Macros** page, which lists the new macro:
 
      ![Macros-Public-List](/img/Macros-Public-List-First.png)
 
-11.  Click the empty space in the **Description** column, enter a descriptive name, and press Enter:
+2.   Click the empty space in the **Description** column, enter a descriptive name, and press Enter:
    
      ![Add Macro Description](/img/Add-Macro-Description-First.png)
 
